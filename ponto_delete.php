@@ -2,18 +2,18 @@
 //Sessão
 session_start();
 //Conexão
-include_once 'db_connect.php';
+include_once 'php_action/db_connect.php';
 
 if(isset($_POST['btn-deletar'])):
 
     $id = mysqli_escape_string($connect, $_POST['id']);
 
-    $sql = "DELETE FROM funcionarios WHERE id = '$id'";
+    $sql = "DELETE FROM entradas WHERE id = '$id'";
     if(mysqli_query($connect, $sql)):
         $_SESSION['mensagem'] = "Deletado com sucesso!";
-        header('Location: ../cadastro.php');
+        header('Location: ponto_list.php');
     else:
         $_SESSION['mensagem'] = "Erro ao deletar";
-        header('Location: ../cadastro.php');
+        header('Location: ponto_list.php');
     endif;
 endif;
