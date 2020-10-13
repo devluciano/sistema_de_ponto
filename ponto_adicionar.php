@@ -19,11 +19,12 @@ include_once 'ponto_header.php';
                 <label for="data">Data</label>
             </div>
             <div class="input-field col s12">
-                <input type="time" name="hora" id="hora">
+                <input  class="date" type="time" name="hora" id="hora">
                 <label for="hora">Hora</label>
             </div>
             <button type="submit" name="btn-cadastrar" class="btn">Salvar</button>
-            <a href="menu.php" class="btn">Voltar</a>
+            <a href="index.php" class="btn">Voltar</a>
+        
         </form>
     </div>
 </div>

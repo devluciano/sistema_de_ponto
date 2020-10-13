@@ -64,7 +64,7 @@ include_once 'ponto_message.php';
                                 </tbody>
                         </table>
                         <br>
-                        <a href="menu.php" class="btn">Voltar</a>
+                        <a href="index.php" class="btn">Voltar</a>
                     </div>
                 </div>
             <?php

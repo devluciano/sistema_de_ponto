@@ -24,7 +24,7 @@ if(isset($_POST['btn-entrar'])):
                 mysqli_close($connect);
                 $_SESSION['logado'] = true;
                 $_SESSION['id_usuario'] = $dados['id'];
-                header('Location: menu.php');
+                header('Location: ponto_adicionar.php');
             else:
                 $erros[] = "<li> Usuário e Senha não conferem </li>";
             endif;
@@ -62,7 +62,7 @@ endif;
                 Senha: <input type="password" name="senha"><br>
                 <button type="submit" name="btn-entrar" class="btn">Entrar</button>
                 <a href="index.php" class="btn">Voltar</a>
-                <a href="adicionar.php" class="btn  blue lighten-2 material-icons right">Cadastre-se</a>
+                
             </form>
         </div>
     </div>

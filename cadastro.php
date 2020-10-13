@@ -67,7 +67,7 @@ include_once 'includes/message.php';
                         </table>
                         <br>
                         <a href="adicionar.php" class="btn">Adicionar funcionário</a>
-                        <a href="menu.php" class="btn">Voltar</a>
+                        <a href="index.php" class="btn">Voltar</a>
                     </div>
                 </div>
             <?php
