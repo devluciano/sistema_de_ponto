@@ -9,13 +9,14 @@ include_once 'ponto_message.php';
 
 <div class="row">
     <div class="col s12 m6 push-m3">
-        <h3 class="light" style="text-align:center">Lista de Entradas </h3>
+        <h3 class="light" style="text-align:center">Relatório de Entradas </h3>
         <table class="striped">
             <thead>
                 <tr>
                 <th>Nome:</th>
                 <th>Email:</th>
-                <th>Data/Hora:</th>
+                <th>Data:</th>
+                <th>Hora:</th>
                 </tr>
             </thead>
             <tbody>
@@ -29,7 +30,8 @@ include_once 'ponto_message.php';
                         <tr>
                             <td><?php echo $dados['nome']; ?></td>
                             <td><?php echo $dados['email']; ?></td>
-                            <td><?php echo $dados['data_hora']; ?></td>
+                            <td><?php echo $dados['data']; ?></td>
+                            <td><?php echo $dados['hora']; ?></td>
                             <td><a href="ponto_editar.php?id=<?php echo $dados['id']; ?>" class="btn-floating orange"><i class="material-icons">edit</td>
                             <td><a href="#modal<?php echo $dados['id']; ?>" class="btn-floating red modal-trigger"><i class="material-icons"
                             >delete</i></a></td>
@@ -62,11 +64,12 @@ include_once 'ponto_message.php';
                                 </tbody>
                         </table>
                         <br>
-                        <a href="index.php" class="btn">Voltar</a>
+                        <a href="menu.php" class="btn">Voltar</a>
                     </div>
                 </div>
             <?php
             //footer
             include_once 'ponto_footer.php';
             ?>
+                                    
 

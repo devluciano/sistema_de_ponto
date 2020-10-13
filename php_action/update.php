@@ -2,7 +2,7 @@
 //Sessão
 session_start();
 //Conexão
-include_once 'db_connect.php';
+include_once 'php_action/db_connect.php';
 
 if(isset($_POST['btn-editar'])):
     $nome = mysqli_escape_string($connect, $_POST['nome']);

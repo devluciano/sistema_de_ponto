@@ -24,7 +24,7 @@ if(isset($_POST['btn-entrar'])):
                 mysqli_close($connect);
                 $_SESSION['logado'] = true;
                 $_SESSION['id_usuario'] = $dados['id'];
-                header('Location: ponto_adicionar.php');
+                header('Location: menu.php');
             else:
                 $erros[] = "<li> Usuário e Senha não conferem </li>";
             endif;

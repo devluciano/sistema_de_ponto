@@ -26,8 +26,12 @@ endif;
                 <label for="email">Email</label>
             </div>
             <div class="input-field col s12">
-                <input type="text" name="data_hora" id="data_hora" value="<?php echo $dados['data_hora']; ?>">
-                <label for="data_hora">Data/Hora</label>
+                <input type="date" name="data" id="data" value="<?php echo $dados['data']; ?>">
+                <label for="data">Data</label>
+            </div>
+            <div class="input-field col s12">
+                <input type="time" name="hora" id="hora" value="<?php echo $dados['hora']; ?>">
+                <label for="hora">Hora</label>
             </div>
             <button type="submit" name="btn-editar" class="btn">Atualizar</button>
             <a href="ponto_list.php" class="btn green">Lista de Entradas</a>

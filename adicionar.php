@@ -24,7 +24,7 @@ include_once 'includes/header.php';
                 <label for="status">Status</label>
             </div>
             <button type="submit" name="btn-cadastrar" class="btn">Salvar</button>
-            <a href="index.php" class="btn">Voltar</a>
+            <a href="menu.php" class="btn">Voltar</a>
         </form>
     </div>
 </div>
